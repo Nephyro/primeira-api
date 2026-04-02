@@ -155,8 +155,8 @@ app.get('/v1/senai/help', function(request, response){
 app.get('/', function(request, response){
     response.status(200)
     response.json({
-        "message": "API operante!",
-        "endpoint": "/v1/senai/help"
+        "message": "API ativa e operante!",
+        "endpoint help": "/v1/senai/help"
     })
 })
 
