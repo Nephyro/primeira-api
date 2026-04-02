@@ -152,6 +152,14 @@ app.get('/v1/senai/help', function(request, response){
     response.json(docAPI)
 })
 
+app.get('/', function(request, response){
+    response.status(200)
+    response.json({
+        "message": "API operante!",
+        "endpoint": "/v1/senai/help"
+    })
+})
+
 // Serve para inicializar a API para receber requisições
 app.listen(8080, function(){
     console.log('API funcionando e aguardando novas requisições...')
