@@ -153,11 +153,7 @@ app.get('/v1/senai/help', function(request, response){
 })
 
 app.get('/', function(request, response){
-    response.status(200)
-    response.json({
-        "message": "API ativa e operante!",
-        "endpoint help": "/v1/senai/help"
-    })
+    response.redirect('/v1/senai/help')
 })
 
 // Serve para inicializar a API para receber requisições
